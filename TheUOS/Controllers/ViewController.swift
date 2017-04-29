@@ -67,6 +67,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let announce = announces[indexPath.row]
         
-        UIApplication.shared.openURL(URL(string: announce.pageURL)!)
+        UIApplication.shared.open(URL(string: announce.pageURL)!, options: [:], completionHandler: nil)
     }
 }

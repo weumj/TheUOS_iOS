@@ -48,7 +48,7 @@ class AnnounceParser {
             break
         }
         
-        pageURL = pageURL + "FA1" // deb
+        pageURL = pageURL + "FA1" // dev
         
         return Announce(title: title, date: date, pageURL: pageURL)
     }
